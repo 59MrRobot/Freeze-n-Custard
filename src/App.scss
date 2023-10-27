@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import './styles/vars';
+
+.App {
+
+}
+
+.name {
+  font-family: 'Unica One', sans-serif;
+  color: $pink-medium;
+}
+
+.logo {
+  width: 200px;
+  height: 100%;
+}
+
+.header {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-family: 'Unica One', sans-serif;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+
+  display: flex;
+  justify-content: space-between;
+
+  width: 50%;
+}
