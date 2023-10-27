@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600;700&family=Unica+One&family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import '../../styles/vars';
+
+.header {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-family: 'Fira Sans', sans-serif;
+}
+
+.logo {
+  width: 250px;
+  height: 100%;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+
+  display: flex;
+  justify-content: space-between;
+
+  &__item {
+    text-decoration: none;
+  }
+}
+
+.nav {
+  width: 50%;
+
+  &__link {
+    text-decoration: none;
+    color: $blue-dark;
+  }
+}

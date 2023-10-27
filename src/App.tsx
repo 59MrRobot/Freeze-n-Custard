@@ -1,26 +1,12 @@
 import React from 'react';
 import './App.scss';
+import { Header } from './components/Header';
 
 const App: React.FC = () => {
   return (
     <div className="App">
-      <header className='header'>
-        <a href="/">
-          <img
-            src={`${process.env.PUBLIC_URL}/images/logo.png`}
-            alt="logo"
-            className="logo"
-          />
-        </a>
+      <Header />
 
-        <ul className='list'>
-          <li className='list__item'>About</li>
-          <li className='list__item'>Signature Creations</li>
-          <li className='list__item'>Visit Us</li>
-          <li className='list__item'>Reviews</li>
-          <li className='list__item'>Join Us</li>
-        </ul>
-      </header>
       <h1>
         Welcome to Freeze 'n Custard: The Ultimate Frozen Custard Experience!
       </h1>
