@@ -1,37 +1,16 @@
 import React from 'react';
 import './App.scss';
 import { Header } from './components/Header';
+import { Main } from './components/Main';
 
 const App: React.FC = () => {
   return (
     <div className="App">
       <Header />
 
-      <h1>
-        Welcome to Freeze 'n Custard: The Ultimate Frozen Custard Experience!
-      </h1>
-
-      <section>
-        <p>
-          🍨 Unparalleled Creaminess: Dive into the silkiest, richest, and most luxurious frozen custard you've ever tasted. Every scoop feels like a decadent embrace.
-        </p>
-
-        <p>
-          🌿 Pure & Simple Ingredients: We believe in simplicity. That's why our custard is crafted from the finest natural ingredients – farm-fresh cream, pure cane sugar, and golden egg yolks.
-        </p>
-          
-        <p>
-          🎨 Flavors Beyond Imagination: From the classic vanilla bean to exotic tropical delights, embark on a journey of flavours that tease the palate and leave you craving more.
-        </p>
-          
-        <p>
-          💖 A Legacy of Craftsmanship: Our custard-making tradition goes back decades. Perfected over generations, our secret recipe is a testament to our passion for the craft.
-        </p>
-
-        <p>
-          🌍 Sustainability Matters: We source our ingredients ethically, reducing our carbon footprint. Enjoying Frosty Delight means supporting a brighter, greener future.
-        </p>
-      </section>
+      <main>
+        <Main />
+      </main>
       
       <section>
           <h2>🍦 Try Our Signature Creations!</h2>
