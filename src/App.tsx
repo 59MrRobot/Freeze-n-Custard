@@ -2,6 +2,7 @@ import React from 'react';
 import './App.scss';
 import { Header } from './components/Header';
 import { Main } from './components/Main';
+import { Creations } from './components/Creations';
 
 const App: React.FC = () => {
   return (
@@ -10,27 +11,9 @@ const App: React.FC = () => {
 
       <main>
         <Main />
+
+        <Creations />
       </main>
-      
-      <section>
-          <h2>🍦 Try Our Signature Creations!</h2>
-
-          <p>
-            Golden Caramel Crunch: A delightful blend of rich custard with swirls of homemade caramel and crunchy praline pieces.
-          </p>
-
-          <p>
-            Tropical Passionfruit Bliss: Dive into summer any time of the year with our exotic passionfruit custard dotted with fresh mango chunks.
-          </p>
-
-          <p>
-            Velvety Chocolate Truffle: For the ultimate chocolate lover, dive into deep, dark chocolate custard with soft truffle bites.
-          </p>
-
-          <p>
-            ✨ Special Offers: Join our Frosty Club and enjoy exclusive deals, early access to new flavors, and a free scoop on your birthday!
-          </p>
-        </section>
 
         <section>
           <h2>Visit Us Today!</h2>

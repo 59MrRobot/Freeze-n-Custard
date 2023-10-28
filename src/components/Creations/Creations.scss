@@ -1,0 +1,88 @@
+@import '../../styles/vars';
+
+.creations {
+  padding: 40px 0;
+
+  &__wrapper {
+    max-width: 1240px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__title {
+    font-family: 'Fira Sans', sans-serif;
+    color: $blue-medium;
+
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  &__container {
+    margin-top: 20px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__text {
+    margin-top: 16px;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+
+    &-title {
+      font-family: 'Fira Sans', sans-serif;
+      color: $blue-dark;
+    }
+  }
+}
+
+.creation {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  width: 50%;
+
+  background-color: $blue-light;
+  border-radius: 8px;
+
+  &--show {
+    display: flex;
+    left: 0;
+  }
+
+  &--hide {
+    display: none;
+    left: 100%;
+  }
+
+  &__text {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    &-title {
+      font-family: 'Fira Sans', sans-serif;
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+  }
+
+  &__image {
+    width: 250px;
+    height: 250px;
+
+    border-radius: 8px;
+
+    object-fit: cover;
+    object-position: center;
+  }
+}
