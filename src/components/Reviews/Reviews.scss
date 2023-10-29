@@ -1,0 +1,55 @@
+@import '../../styles/vars';
+
+.reviews {
+  position: relative;
+  left: -10px;
+  padding: 40px 0;
+
+  width: 100vw;
+
+  background-color: $blue-light;
+
+  &__wrapper {
+    max-width: 1240px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {
+    font-family: 'Fira Sans', sans-serif;
+    color: #fff;
+
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  &__container {
+    margin-top: 32px;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+  }
+}
+
+.review {
+  padding: 16px;
+  width: 50%;
+
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  justify-items: center;
+  gap: 8px;
+
+  &__text {
+    text-align: center;
+  }
+
+  &__name {
+    font-weight: 600;
+  }
+}

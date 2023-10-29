@@ -1,7 +1,7 @@
 @import '../../styles/vars';
 
 .visit {
-  padding: 40px 0;
+  padding: 40px 0 64px;
 
   &__wrapper {
     max-width: 1240px;
@@ -33,7 +33,7 @@
     width: 50%;
 
     border-radius: 8px;
-    background-color: $pink-light;
+    background-image: -webkit-linear-gradient(30deg, $pink-light, $pink-dark);
 
     &-title {
       margin: 16px 0;

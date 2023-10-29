@@ -4,6 +4,7 @@ import { Header } from './components/Header';
 import { Main } from './components/Main';
 import { Creations } from './components/Creations';
 import { Visit } from './components/Visit';
+import { Reviews } from './components/Reviews';
 
 const App: React.FC = () => {
   return (
@@ -16,15 +17,11 @@ const App: React.FC = () => {
         <Creations />
 
         <Visit />
+
+        <Reviews />
       </main>
 
-        <section>
-          <h2>Reviews:</h2>
-
-          <p>⭐⭐⭐⭐⭐ "The creamiest custard I've ever had! Every flavor is a new adventure." - Jordan T.</p>
-
-          <p>⭐⭐⭐⭐⭐ "Absolutely obsessed. I can't imagine summer without it!" - Mia K.</p>
-        </section>
+        
 
         <section>
           <h2>👩‍🍳 Join Our Team!</h2>
