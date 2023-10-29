@@ -5,6 +5,7 @@ import { Main } from './components/Main';
 import { Creations } from './components/Creations';
 import { Visit } from './components/Visit';
 import { Reviews } from './components/Reviews';
+import { Join } from './components/Join';
 
 const App: React.FC = () => {
   return (
@@ -19,16 +20,13 @@ const App: React.FC = () => {
         <Visit />
 
         <Reviews />
+
+        <Join />
       </main>
 
         
 
-        <section>
-          <h2>👩‍🍳 Join Our Team!</h2>
-          <p>
-            Passionate about desserts? We're hiring. Become part of the <span className="name">Freeze 'n Custard</span> family.
-          </p>
-        </section>
+        
 
         <p>
           Enjoy responsibly. Every moment with
