@@ -3,6 +3,7 @@ import './App.scss';
 import { Header } from './components/Header';
 import { Main } from './components/Main';
 import { Creations } from './components/Creations';
+import { Visit } from './components/Visit';
 
 const App: React.FC = () => {
   return (
@@ -13,16 +14,9 @@ const App: React.FC = () => {
         <Main />
 
         <Creations />
+
+        <Visit />
       </main>
-
-        <section>
-          <h2>Visit Us Today!</h2>
-
-          <p>Dive into the world of Frosty Delight and discover why our frozen custard is the talk of the town.</p>
-
-          <p>[🛍️ Shop Now] [📍 Store Locator] [💌 Sign up for Frosty News]</p>
-        </section>
-         
 
         <section>
           <h2>Reviews:</h2>
