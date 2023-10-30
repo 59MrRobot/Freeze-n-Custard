@@ -42,7 +42,7 @@ const App: React.FC = () => {
 
         <Join />
       </main>
-
+ 
       <button
         className='back-to-top'
         onClick={handleClickScroll}
