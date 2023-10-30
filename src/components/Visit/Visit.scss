@@ -33,7 +33,11 @@
     width: 50%;
 
     border-radius: 8px;
-    background-image: -webkit-linear-gradient(30deg, $pink-light, $pink-dark);
+
+    background-image: url('../../../public/images/newsletter-1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 
     &-title {
       margin: 16px 0;

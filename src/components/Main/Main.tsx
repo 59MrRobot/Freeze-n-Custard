@@ -10,11 +10,19 @@ export const Main: React.FC = () => {
   return (
     <section className='main'>
       <div className='main__wrapper'>
-        <h1 className='main__title'>
-          Welcome to Freeze 'n Custard: The Ultimate Frozen Custard Experience!
-        </h1>
+        <div className='main__container'>
+          <h1 className='main__title'>
+            Welcome to Freeze 'n Custard: The Ultimate Frozen Custard Experience!
+          </h1>
 
-        <div className='container'>
+          <img
+            src={`${process.env.PUBLIC_URL}/images/frozen-custard.png`}
+            alt=""
+            className='main__image'
+          />
+        </div>
+
+        <div className='container' id="about">
           <div className='container__item'>
             <IcecreamIcon sx={{ fontSize: 60, color: '#F7E0E3' }} />
 

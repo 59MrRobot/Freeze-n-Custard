@@ -3,7 +3,7 @@ import './Join.scss';
 
 export const Join: React.FC = () => {
   return (
-    <section className='join'>
+    <section className='join' id="join-us">
       <div className="join__wrapper">
         <div className='join__image'></div>
 

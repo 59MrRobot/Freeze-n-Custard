@@ -3,7 +3,7 @@ import './Reviews.scss';
 
 export const Reviews: React.FC = () => {
   return (
-    <section className='reviews'>
+    <section className='reviews' id="reviews">
       <div className="reviews__wrapper">
         <h2 className='reviews__title'>Reviews:</h2>
 

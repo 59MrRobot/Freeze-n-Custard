@@ -3,7 +3,7 @@ import './Visit.scss';
 
 export const Visit: React.FC = () => {
   return (
-    <section className='visit'>
+    <section className='visit' id="visit-us">
       <div className='visit__wrapper'>
         <h2 className='visit__title'>Visit Us Today!</h2>
 

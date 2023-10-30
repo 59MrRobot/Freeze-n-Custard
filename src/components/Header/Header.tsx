@@ -14,19 +14,19 @@ export const Header: React.FC = () => {
 
       <nav className='nav'>
         <ul className='list'>
-            <a href="/" className='nav__link'>
+            <a href="#about" className='nav__link'>
               <li className='list__item'>About</li>
             </a>
-            <a href="/" className='nav__link'>
+            <a href="#creations" className='nav__link'>
               <li className='list__item'>Signature Creations</li>
             </a>
-            <a href="/" className='nav__link'>
+            <a href="#visit-us" className='nav__link'>
               <li className='list__item'>Visit Us</li>
             </a>
-            <a href="/" className='nav__link'>
+            <a href="#reviews" className='nav__link'>
               <li className='list__item'>Reviews</li>
             </a>
-            <a href="/" className='nav__link'>
+            <a href="#join-us" className='nav__link'>
               <li className='list__item'>Join Us</li>
             </a>
           </ul>

@@ -12,15 +12,15 @@ import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 const App: React.FC = () => {
   let button = document.getElementById("button");
 
-  window.onscroll = function() { scrollFunction() };
-
   const scrollFunction = () => {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
       button!.style.display = "flex";
     } else {
       button!.style.display = "none";
     }
   }
+
+  window.onscroll = function() { scrollFunction() };
 
   const handleClickScroll = () => {
     document.body.scrollTop = 0;

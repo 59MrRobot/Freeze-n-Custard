@@ -1,34 +1,41 @@
 @import '../../styles/vars';
 
 .main {
-  padding: 40px 0;
+  padding: 0 0 40px;
 
   &__wrapper {
-    max-width: 1240px;
-    margin: 0 auto;
-
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
+  }
+
+  &__container {
+    padding: 64px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: $pink-light;
   }
 
   &__title {
     font-family: 'Fira Sans', sans-serif;
-    color: $pink-medium;
+    color: $pink-dark;
 
-    font-size: 2rem;
+    font-size: 2.75rem;
     font-weight: 700;
     text-align: center;
   }
 
   &__image {
-    height: 50%;
-    width: 50%;
+    width: 125%;
   }
 }
 
 .container {
-  margin-top: 20px;
+  max-width: 1240px;
+  margin: 48px auto 0;
+
   display: flex;
   justify-content: space-between;
   gap: 10px;
