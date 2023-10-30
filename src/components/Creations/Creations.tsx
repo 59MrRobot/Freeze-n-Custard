@@ -2,6 +2,12 @@ import React, { useState } from 'react';
 import './Creations.scss';
 import NavigateBeforeIcon from '@mui/icons-material/NavigateBefore';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
+import Caramel from './caramel.webp';
+import CaramelTexture from './caramel-texture.webp';
+import Tropical from './tropical.webp';
+import TropicalTexture from './tropical-texture.webp';
+import Velvet from './velvet.webp';
+import VelvetTexture from './velvet-texture.webp';
 
 export const Creations: React.FC = React.memo(
   () => {
@@ -15,7 +21,7 @@ export const Creations: React.FC = React.memo(
           <div className='creations__container'>
             <div className='creations__container-background'>
               <img
-                src={`${process.env.PUBLIC_URL}/images/${index === 0 ? 'caramel' : index === 1 ? 'vanilla' : 'velvet'}-texture.jpg`}
+                src={index === 0 ? CaramelTexture : index === 1 ? TropicalTexture : VelvetTexture}
                 alt=""
                 className='creations__container-texture'
                 loading='lazy'
@@ -45,7 +51,7 @@ export const Creations: React.FC = React.memo(
                 </div>
 
                 <img
-                  src={`${process.env.PUBLIC_URL}/images/caramel-1.png`}
+                  src={Caramel}
                   alt="caramel crunch frozen custard"
                   className='creation__image'
                   loading='lazy'
@@ -66,7 +72,7 @@ export const Creations: React.FC = React.memo(
                 </div>
 
                 <img
-                  src={`${process.env.PUBLIC_URL}/images/tropical-1.png`}
+                  src={Tropical}
                   alt="tropical passionfruit frozen custard"
                   className='creation__image'
                   loading='lazy'
@@ -87,7 +93,7 @@ export const Creations: React.FC = React.memo(
                 </div>
 
                 <img
-                  src={`${process.env.PUBLIC_URL}/images/velvet-1.png`}
+                  src={Velvet}
                   alt="chocolate truffle frozen custard"
                   className='creation__image'
                   loading='lazy'

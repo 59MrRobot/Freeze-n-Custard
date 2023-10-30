@@ -3,12 +3,12 @@ import { createRoot } from 'react-dom/client';
 import './index.scss';
 import App from './App';
 import {
-  createBrowserRouter,
+  createHashRouter,
   RouterProvider,
 } from "react-router-dom";
 import ErrorPage from "./error";
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <App />,

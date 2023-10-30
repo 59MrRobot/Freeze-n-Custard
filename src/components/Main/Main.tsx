@@ -5,6 +5,7 @@ import YardIcon from '@mui/icons-material/Yard';
 import PaletteIcon from '@mui/icons-material/Palette';
 import VolunteerActivismIcon from '@mui/icons-material/VolunteerActivism';
 import RecyclingIcon from '@mui/icons-material/Recycling';
+import FrozenCustard from './frozen-custard.webp';
 
 export const Main: React.FC = React.memo(
   () => {
@@ -17,7 +18,7 @@ export const Main: React.FC = React.memo(
             </h1>
 
             <img
-              src={`${process.env.PUBLIC_URL}/images/frozen-custard.png`}
+              src={FrozenCustard}
               alt="top view of frozen custard"
               className='main__image'
               loading='eager'
