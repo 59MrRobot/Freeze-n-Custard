@@ -9,7 +9,7 @@ export const Creations: React.FC = () => {
   return (
     <section className='creations' id="creations">
       <div className="creations__wrapper">
-        <h2 className="creations__title">Try Our Signature Creations!</h2>
+        <h2 className="title creations__title">Try Our Signature Creations!</h2>
 
         <div className='creations__container'>
           <div className='creations__container-background'>

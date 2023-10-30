@@ -5,7 +5,7 @@ export const Reviews: React.FC = () => {
   return (
     <section className='reviews' id="reviews">
       <div className="reviews__wrapper">
-        <h2 className='reviews__title'>Reviews:</h2>
+        <h2 className='title reviews__title'>Reviews:</h2>
 
         <div className='reviews__container'>
           <div className="review">

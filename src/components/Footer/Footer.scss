@@ -1,12 +1,7 @@
 @import '../../styles/vars';
 
 .footer {
-  position: relative;
-  left: -8px;
-  bottom: -8px;
-
-  padding: 40px 0;
-  width: 100vw;
+  padding: 40px 0 24px;
 
   background-color: $blue-dark;
 
@@ -15,7 +10,30 @@
     margin: 0 auto;
 
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  &__socials {
+    margin-top: 24px;
+
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+
+    &-icon {
+      color: #fff;
+
+      cursor: pointer;
+
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        transform: scale(1.2);
+
+        color: #000;
+      }
+    }
   }
 }

@@ -8,6 +8,8 @@
   width: 100vw;
 
   background-color: $blue-light;
+  
+  background-image: -webkit-linear-gradient(30deg, $blue-light 40%, $blue-dark 60%);
 
   &__wrapper {
     max-width: 1240px;
@@ -19,12 +21,7 @@
   }
 
   &__title {
-    font-family: 'Fira Sans', sans-serif;
     color: #fff;
-
-    font-size: 2rem;
-    font-weight: 700;
-    text-align: center;
   }
 
   &__container {

@@ -5,7 +5,7 @@ export const Visit: React.FC = () => {
   return (
     <section className='visit' id="visit-us">
       <div className='visit__wrapper'>
-        <h2 className='visit__title'>Visit Us Today!</h2>
+        <h2 className='title visit__title'>Visit Us Today!</h2>
 
         <p>Dive into the world of Frosty Delight and discover why our frozen custard is the talk of the town.</p>
 
