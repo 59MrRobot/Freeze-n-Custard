@@ -1,0 +1,21 @@
+@import '../../styles/vars';
+
+.footer {
+  position: relative;
+  left: -8px;
+  bottom: -8px;
+
+  padding: 40px 0;
+  width: 100vw;
+
+  background-color: $blue-dark;
+
+  &__wrapper {
+    max-width: 1240px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

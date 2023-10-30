@@ -3,7 +3,7 @@ import './Header.scss';
 
 export const Header: React.FC = () => {
   return (
-    <header className='header'>
+    <header className='header' id='header'>
       <a href="/">
         <img
           src={`${process.env.PUBLIC_URL}/images/logo.png`}
