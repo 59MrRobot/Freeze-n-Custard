@@ -1,6 +1,7 @@
 import React from 'react';
 import './Header.scss';
 import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 
 export const Header: React.FC = React.memo(
   () => {
@@ -16,21 +17,21 @@ export const Header: React.FC = React.memo(
 
         <nav className='nav'>
           <ul className='list'>
-              <a href="#about" className='nav__link'>
+              <HashLink to="/#about" className='nav__link'>
                 <li className='list__item'>About</li>
-              </a>
-              <a href="#creations" className='nav__link'>
+              </HashLink>
+              <HashLink to="/#creations" className='nav__link'>
                 <li className='list__item'>Signature Creations</li>
-              </a>
-              <a href="#visit-us" className='nav__link'>
+              </HashLink>
+              <HashLink to="/#visit-us" className='nav__link'>
                 <li className='list__item'>Visit Us</li>
-              </a>
-              <a href="#reviews" className='nav__link'>
+              </HashLink>
+              <HashLink to="/#reviews" className='nav__link'>
                 <li className='list__item'>Reviews</li>
-              </a>
-              <a href="#join-us" className='nav__link'>
+              </HashLink>
+              <HashLink to="/#join-us" className='nav__link'>
                 <li className='list__item'>Join Us</li>
-              </a>
+              </HashLink>
             </ul>
         </nav>
       </header>
