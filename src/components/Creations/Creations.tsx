@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useCallback, useState } from 'react';
 import './Creations.scss';
 import NavigateBeforeIcon from '@mui/icons-material/NavigateBefore';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
@@ -13,6 +13,12 @@ export const Creations: React.FC = React.memo(
   () => {
     const [index, setIndex] = useState(0);
 
+    const handleClick = useCallback(
+      (newIndex: number) => {
+        setIndex(newIndex);
+      }, []
+    )
+
     return (
       <section className='creations' id="creations">
         <div className="creations__wrapper">
@@ -22,7 +28,7 @@ export const Creations: React.FC = React.memo(
             <div className='creations__container-background'>
               <img
                 src={index === 0 ? CaramelTexture : index === 1 ? TropicalTexture : VelvetTexture}
-                alt=""
+                alt="product background"
                 className='creations__container-texture'
               />
             </div>
@@ -35,7 +41,7 @@ export const Creations: React.FC = React.memo(
                   cursor: "pointer",
                   color: "#A9D1EA"
                 }}
-                onClick={() => index > 0 ? setIndex(index - 1) : setIndex(0)}
+                onClick={() => index > 0 ? handleClick(index-1) : handleClick(0)}
               />
 
               <div
@@ -103,7 +109,7 @@ export const Creations: React.FC = React.memo(
                   cursor: "pointer",
                   color: "#A9D1EA"
                 }}
-                onClick={() => index < 2 ? setIndex(index + 1) : setIndex(2)}
+                onClick={() => index < 2 ? handleClick(index + 1) : handleClick(2)}
               />
             </div>
           </div>

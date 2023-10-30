@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.scss';
 import { Header } from './components/Header';
 import { Main } from './components/Main';
@@ -10,13 +10,13 @@ import { Footer } from './components/Footer';
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 
 const App: React.FC = () => {
-  let button = document.getElementById("button");
+  const [visible, setVisible] = useState(false);
 
   const scrollFunction = () => {
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-      button!.style.visibility = "visible";
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+      setVisible(true);
     } else {
-      button!.style.visibility = "hidden";
+      setVisible(false);
     }
   }
 
@@ -47,6 +47,7 @@ const App: React.FC = () => {
         className='back-to-top'
         onClick={handleClickScroll}
         id="button"
+        style={{ visibility: visible ? 'visible' : 'hidden' }}
       >
         <KeyboardArrowUpIcon sx={{ color: "#000" }} />
       </button>
