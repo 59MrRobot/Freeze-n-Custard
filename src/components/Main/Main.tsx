@@ -21,7 +21,6 @@ export const Main: React.FC = React.memo(
               src={FrozenCustard}
               alt="top view of frozen custard"
               className='main__image'
-              loading='eager'
             />
           </div>
 

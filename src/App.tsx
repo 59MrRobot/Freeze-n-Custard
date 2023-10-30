@@ -14,9 +14,9 @@ const App: React.FC = () => {
 
   const scrollFunction = () => {
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-      button!.style.display = "flex";
+      button!.style.visibility = "visible";
     } else {
-      button!.style.display = "none";
+      button!.style.visibility = "hidden";
     }
   }
 
@@ -46,7 +46,8 @@ const App: React.FC = () => {
       <button
         className='back-to-top'
         onClick={handleClickScroll}
-        id="button">
+        id="button"
+      >
         <KeyboardArrowUpIcon sx={{ color: "#000" }} />
       </button>
 

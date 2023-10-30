@@ -24,7 +24,6 @@ export const Creations: React.FC = React.memo(
                 src={index === 0 ? CaramelTexture : index === 1 ? TropicalTexture : VelvetTexture}
                 alt=""
                 className='creations__container-texture'
-                loading='lazy'
               />
             </div>
             
@@ -54,7 +53,6 @@ export const Creations: React.FC = React.memo(
                   src={Caramel}
                   alt="caramel crunch frozen custard"
                   className='creation__image'
-                  loading='lazy'
                 />
               </div>
 
@@ -75,7 +73,6 @@ export const Creations: React.FC = React.memo(
                   src={Tropical}
                   alt="tropical passionfruit frozen custard"
                   className='creation__image'
-                  loading='lazy'
                 />
               </div>
 
@@ -96,7 +93,6 @@ export const Creations: React.FC = React.memo(
                   src={Velvet}
                   alt="chocolate truffle frozen custard"
                   className='creation__image'
-                  loading='lazy'
                 />
               </div>
 

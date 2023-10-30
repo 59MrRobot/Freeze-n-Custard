@@ -20,7 +20,7 @@
   bottom: 24px;
   right: 24px;
 
-  display: none;
+  display: flex;
   justify-content: center;
   align-items: center;
 
@@ -34,6 +34,7 @@
 
   z-index: 1;
   cursor: pointer;
+  visibility: hidden;
 
   transition: all 0.3s ease-in-out;
 
