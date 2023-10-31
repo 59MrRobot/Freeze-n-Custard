@@ -23,7 +23,10 @@
     background-color: $pink-light;
 
     @include mobile {
-      padding: 64px 0 64px 16px;
+      padding: 24px 16px;
+
+      flex-direction: column;
+      gap: 16px;
     }
   }
 
@@ -47,8 +50,11 @@
   &__image {
     width: 125%;
 
+    object-position: center;
+    object-fit: cover;
+
     @include mobile {
-      width: 200%;
+      width: 75%;
     }
   }
 }
