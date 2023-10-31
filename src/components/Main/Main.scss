@@ -1,7 +1,12 @@
 @import '../../styles/vars';
+@import '../../styles/mixins';
 
 .main {
   padding: 0 0 40px;
+
+  @include tablet {
+    padding: 0 0 32px;
+  }
 
   &__wrapper {
     display: flex;
@@ -25,10 +30,22 @@
     font-size: 2.75rem;
     font-weight: 700;
     text-align: center;
+
+    @include tablet {
+      font-size: 2rem;
+    }
+
+    @include mobile {
+      font-size: 1rem;
+    }
   }
 
   &__image {
     width: 125%;
+
+    @include mobile {
+      width: 175%;
+    }
   }
 }
 
@@ -40,6 +57,16 @@
   justify-content: space-between;
   gap: 10px;
 
+  @include tablet {
+    padding: 0 24px;
+  }
+
+  @include mobile {
+    padding: 0 16px;
+
+    flex-wrap: wrap;
+  }
+
   &__item {
     padding: 10px;
 
@@ -48,9 +75,15 @@
     align-items: center;
     gap: 8px;
 
-    // background-color: $blue-light;
-
     text-align: center;
+
+    @include tablet {
+      font-size: 0.9rem;
+    }
+
+    @include tablet {
+      font-size: 0.8rem;
+    }
 
     &-title {
       margin-bottom: 8px;

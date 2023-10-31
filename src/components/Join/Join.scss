@@ -1,7 +1,16 @@
 @import '../../styles/vars';
+@import '../../styles/mixins';
 
 .join {
   padding: 96px 0;
+
+  @include tablet {
+    padding: 88px 0;
+  }
+
+  @include mobile {
+    padding: 80px 0;
+  }
 
   &__wrapper {
     max-width: 1240px;
@@ -11,14 +20,27 @@
     justify-content: center;
     align-items: center;
     gap: 24px;
+
+    text-align: left;
+
+    @include tablet {
+      padding: 0 24px;
+    }
+
+    @include mobile {
+      padding: 0 16px;
+
+      text-align: center;
+    }
   }
 
   &__title {
     color: $pink-medium;
-  }
+    text-align: left;
 
-  &__text {
-    margin-top: 16px;
+    @include mobile {
+      text-align: center;
+    }
   }
 
   &__link {
@@ -36,5 +58,9 @@
     background-size: cover;
 
     box-shadow: 0 0 10px 10px #fff inset;
+
+    @include mobile {
+      display: none;
+    }
   }
 }
