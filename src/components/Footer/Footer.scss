@@ -1,0 +1,75 @@
+@import '../../styles/vars';
+@import '../../styles/mixins';
+
+.footer {
+  padding: 40px 0 24px;
+
+  background-color: $blue-dark;
+
+  @include tablet {
+    padding: 32px 0 16px;
+  }
+
+  @include tablet {
+    padding: 24px 0 8px;
+  }
+
+  &__wrapper {
+    max-width: 1240px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    @include tablet {
+      padding: 0 24px;
+    }
+
+    @include tablet {
+      padding: 0 16px;
+    }
+  }
+
+  &__socials {
+    margin-top: 24px;
+
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+
+    @include tablet {
+      margin-top: 16px;
+    }
+
+    @include tablet {
+      margin-top: 8px;
+    }
+
+    &-icon {
+      color: #fff;
+
+      cursor: pointer;
+
+      transition: all 0.3s ease-in-out;
+
+      @include tablet {
+        transition: none;
+      }
+
+      &:hover {
+        transform: scale(1.2);
+
+        color: #000;
+
+        @include tablet {
+          transform: none;
+
+          color: #fff;
+        }
+      }
+    }
+  }
+}

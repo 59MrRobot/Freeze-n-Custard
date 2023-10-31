@@ -1,0 +1,193 @@
+@import '../../styles/vars';
+@import '../../styles/mixins';
+
+.creations {
+  padding: 40px 0;
+
+  @include tablet {
+    padding: 32px 0;
+  }
+
+  @include mobile {
+    padding: 24px 0;
+  }
+
+  &__wrapper {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__title {
+    color: $blue-medium;
+
+    @include mobile {
+      padding: 0 16px;
+    }
+  }
+
+  &__container {
+    position: relative;
+
+    width: 100%;
+    height: 450px;
+    background-color: #000000ce;
+
+    @include tablet {
+      height: 350px;
+    }
+
+    @include mobile {
+      height: 300px;
+    }
+
+    &-background {
+      opacity: 0.6;
+      position: absolute;
+      left: 0;
+      top: 0;
+
+      width: 100%;
+    }
+
+    &-texture {
+      overflow: hidden;
+      position: relative;
+
+      width: 100%;
+      height: 450px;
+
+      @include tablet {
+        height: 350px;
+      }
+
+      @include mobile {
+        height: 300px;
+      }
+    }
+
+    &-content {
+      position: relative;
+
+      height: 100%;
+      width: 100%;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      @include mobile {
+        padding: 0 8px;
+      }
+    }
+
+    &-arrow {
+      display: flex;
+      
+      &:first-of-type {
+        text-align: right;
+      }
+    }
+  }
+
+  &__text {
+    max-width: 1240px;
+    margin: 16px auto;
+
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+
+    @include tablet {
+      padding: 0 24px;
+    }
+
+    @include tablet {
+      padding: 0 16px;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &-title {
+      font-family: 'Fira Sans', sans-serif;
+      color: $blue-dark;
+    }
+  }
+}
+
+.creation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // gap: 4px;
+
+  width: 100%;
+
+  color: $blue-light;
+
+  &--show {
+    display: flex;
+  }
+
+  &--hide {
+    display: none;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+
+    font-size: 2rem;
+
+    @include tablet {
+      gap: 32px;
+
+      font-size: 1.25rem;
+    }
+
+    @include mobile {
+      gap: 24px;
+
+      font-size: 1rem;
+    }
+
+    &-title {
+      font-family: 'Fira Sans', sans-serif;
+      font-size: 3rem;
+      font-weight: 800;
+      letter-spacing: 4px;
+
+      @include tablet {
+        font-size: 2rem;
+      }
+
+      @include mobile {
+        font-size: 1.25rem;
+      }
+    }
+  }
+
+  &__image {
+    width: 350px;
+    height: 350px;
+
+    object-fit: contain;
+    object-position: center;
+
+    @include tablet {
+      width: 250px;
+      height: 250px;
+    }
+
+    @include mobile {
+      position: relative;
+      top: -56px;
+      width: 100px;
+      height: 100px;
+    }
+  }
+}

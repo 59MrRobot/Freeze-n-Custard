@@ -1,0 +1,103 @@
+@import '../../styles/vars';
+@import '../../styles/mixins';
+
+.main {
+  padding: 0 0 40px;
+
+  @include tablet {
+    padding: 0 0 32px;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__container {
+    padding: 64px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: $pink-light;
+
+    @include mobile {
+      padding: 48px 16px;
+
+      flex-direction: column;
+      gap: 32px;
+    }
+  }
+
+  &__title {
+    font-family: 'Fira Sans', sans-serif;
+    color: $pink-dark;
+
+    font-size: 2.75rem;
+    font-weight: 700;
+    text-align: center;
+
+    @include tablet {
+      font-size: 2rem;
+    }
+
+    @include mobile {
+      font-size: 1rem;
+    }
+  }
+
+  &__image {
+    width: 130%;
+
+    object-position: center;
+    object-fit: cover;
+
+    @include mobile {
+      width: 100%;
+    }
+  }
+}
+
+.container {
+  max-width: 1240px;
+  margin: 48px auto 0;
+
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+
+  @include tablet {
+    padding: 0 24px;
+  }
+
+  @include mobile {
+    padding: 0 16px;
+
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+
+    text-align: center;
+
+    @include tablet {
+      font-size: 0.9rem;
+    }
+
+    @include tablet {
+      font-size: 0.8rem;
+    }
+
+    &-title {
+      margin-bottom: 8px;
+      font-weight: 600;
+    }
+  }
+}
