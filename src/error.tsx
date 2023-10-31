@@ -1,8 +1,9 @@
+import React from 'react';
 import { useRouteError } from "react-router-dom";
 import { Link } from "react-router-dom";
 import './error.scss';
 
-export default function ErrorPage() {
+export const ErrorPage: React.FC = () => {
   const error: any = useRouteError();
 
   return (

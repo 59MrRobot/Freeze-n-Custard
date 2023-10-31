@@ -19,9 +19,7 @@
   }
 
   &__open-menu {
-    @include tablet {
-      display: none;
-    }
+    display: none;
 
     @include mobile {
       display: unset;
@@ -95,8 +93,12 @@
 
   background-color: $pink-light;
 
+  display: none;
+
   &--show {
-    display: unset;
+    @include mobile {
+      display: unset;
+    }
   }
 
   &--hide {

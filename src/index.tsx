@@ -6,7 +6,7 @@ import {
   createHashRouter,
   RouterProvider,
 } from "react-router-dom";
-import ErrorPage from "./error";
+import { ErrorPage } from "./error";
 
 const router = createHashRouter([
   {
