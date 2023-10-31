@@ -45,7 +45,6 @@ export const Creations: React.FC<Props> = React.memo(
                 <NavigateBeforeIcon
                   sx={{
                     fontSize: width < 600 ? "40px" : "64px",
-                    // marginRight: width < 600 ? "4px" : "16px",
                     cursor: "pointer",
                     color: "#A9D1EA",
                   }}
@@ -115,7 +114,6 @@ export const Creations: React.FC<Props> = React.memo(
                 <NavigateNextIcon
                   sx={{
                     fontSize: width < 600 ? "40px" : "64px",
-                    // marginLeft: width < 600 ? "4px" : "16px",
                     cursor: "pointer",
                     color: "#A9D1EA",
                   }}

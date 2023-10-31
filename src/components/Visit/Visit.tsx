@@ -19,7 +19,7 @@ export const Visit: React.FC<Props> = React.memo(
           <p>Dive into the world of Frosty Delight and discover why our frozen custard is the talk of the town.</p>
 
           <div className="visit__container">
-            {/* <iframe
+            <iframe
               src="https://locatestore.com/yK8Abo"
               style={{
                 border: "none",
@@ -28,7 +28,7 @@ export const Visit: React.FC<Props> = React.memo(
               }}
               allow="geolocation"
               title="map"
-            ></iframe> */}
+            ></iframe>
 
             <div className='visit__newsletter'>
               <div>

@@ -56,6 +56,11 @@
     background-color: #fff;
   }
 
+  @include mobile {
+    width: 24px;
+    height: 24px;
+  }
+
   &:hover {
     border-image: linear-gradient($blue-medium, $pink-medium) 10;
     border-width: 4px;
