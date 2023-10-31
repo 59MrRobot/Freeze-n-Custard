@@ -1,27 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import './Visit.scss';
 
-export const Visit: React.FC = React.memo(
-  () => {
-    const [screenSize, setScreenSize] = useState(getCurrentDimension());
+interface Props {
+  screenSize: screenSize;
+}
 
-    function getCurrentDimension(){
-      return {
-        width: window.innerWidth,
-        height: window.innerHeight
-      }
-    }
-
-    useEffect(() => {
-      const updateDimension = () => {
-        setScreenSize(getCurrentDimension())
-      }
-      window.addEventListener('resize', updateDimension);
-      
-      return(() => {
-          window.removeEventListener('resize', updateDimension);
-      })
-    }, [screenSize])
+export const Visit: React.FC<Props> = React.memo(
+  (screenSize) => {
+    const {
+      width
+    } = screenSize.screenSize;
 
     return (
       <section className='visit' id="visit-us">
@@ -35,8 +23,8 @@ export const Visit: React.FC = React.memo(
               src="https://locatestore.com/yK8Abo"
               style={{
                 border: "none",
-                width: screenSize.width < 1024 ? "100%" : "50%",
-                height: screenSize.width < 1024 ? "500px" : "auto"
+                width: width < 1024 ? "100%" : "50%",
+                height: width < 1024 ? "500px" : "auto"
               }}
               allow="geolocation"
               title="map"

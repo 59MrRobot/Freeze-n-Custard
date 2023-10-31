@@ -1,13 +1,30 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './Header.scss';
 import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 
-export const Header: React.FC = React.memo(
-  () => {
+interface Props {
+  screenSize: screenSize;
+}
+
+export const Header: React.FC<Props> = React.memo(
+  (screenSize) => {
     const [showMenu, setShowMenu] = useState(false);
+    const {
+      width
+    } = screenSize.screenSize;
+
+    const html = document.getElementById('html');
+
+    useEffect(() => {
+      if (html && width < 600 && showMenu) {
+        html.style.overflow = 'hidden';
+      } else {
+        html!.style.overflow = 'scroll';
+      }
+    }, [html, showMenu, width]);
 
     return (
       <header className='header' id='header'>
@@ -52,7 +69,7 @@ export const Header: React.FC = React.memo(
         
         <div className={`menu menu--${showMenu ? 'show' : 'hide'}`}>
           <div className='menu__controls'>
-            <Link to="/">
+            <Link to="/" onClick={() => setShowMenu(false)}>
               <img
                 src={`${process.env.PUBLIC_URL}/images/logo.png`}
                 alt="logo"

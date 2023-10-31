@@ -21,6 +21,10 @@
     align-items: center;
 
     background-color: $pink-light;
+
+    @include mobile {
+      padding: 64px 0 64px 16px;
+    }
   }
 
   &__title {
@@ -44,7 +48,7 @@
     width: 125%;
 
     @include mobile {
-      width: 175%;
+      width: 200%;
     }
   }
 }

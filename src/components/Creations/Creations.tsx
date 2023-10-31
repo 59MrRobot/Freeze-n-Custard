@@ -9,9 +9,16 @@ import TropicalTexture from './tropical-texture.webp';
 import Velvet from './velvet.webp';
 import VelvetTexture from './velvet-texture.webp';
 
-export const Creations: React.FC = React.memo(
-  () => {
+interface Props {
+  screenSize: screenSize;
+}
+
+export const Creations: React.FC<Props> = React.memo(
+  (screenSize) => {
     const [index, setIndex] = useState(0);
+    const {
+      width
+    } = screenSize.screenSize;
 
     const handleClick = useCallback(
       (newIndex: number) => {
@@ -34,15 +41,17 @@ export const Creations: React.FC = React.memo(
             </div>
             
             <div className='creations__container-content'>
-              <NavigateBeforeIcon
-                sx={{
-                  fontSize: "64px",
-                  marginRight: "16px",
-                  cursor: "pointer",
-                  color: "#A9D1EA"
-                }}
-                onClick={() => index > 0 ? handleClick(index-1) : handleClick(0)}
-              />
+              <div className='creations__container-arrow'>
+                <NavigateBeforeIcon
+                  sx={{
+                    fontSize: width < 600 ? "40px" : "64px",
+                    marginRight: width < 600 ? "4px" : "16px",
+                    cursor: "pointer",
+                    color: "#A9D1EA",
+                  }}
+                  onClick={() => index > 0 ? handleClick(index - 1) : handleClick(2)}
+                />
+              </div>
 
               <div
                 className={`creation ${index === 0 ? 'creation--show' : 'creation--hide'}`}
@@ -102,15 +111,17 @@ export const Creations: React.FC = React.memo(
                 />
               </div>
 
-              <NavigateNextIcon
-                sx={{
-                  fontSize: "64px",
-                  marginLeft: "16px",
-                  cursor: "pointer",
-                  color: "#A9D1EA"
-                }}
-                onClick={() => index < 2 ? handleClick(index + 1) : handleClick(2)}
-              />
+              <div className='creations__container-arrow'>
+                <NavigateNextIcon
+                  sx={{
+                    fontSize: width < 600 ? "40px" : "64px",
+                    marginLeft: width < 600 ? "4px" : "16px",
+                    cursor: "pointer",
+                    color: "#A9D1EA",
+                  }}
+                  onClick={() => index < 2 ? handleClick(index + 1) : handleClick(0)}
+                />
+              </div>
             </div>
           </div>
 
