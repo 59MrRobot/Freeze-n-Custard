@@ -23,6 +23,7 @@ export const Header: React.FC<Props> = React.memo(
         html.style.overflow = 'hidden';
       } else {
         html!.style.overflow = 'scroll';
+        html!.style.overflowX = 'hidden';
       }
     }, [html, showMenu, width]);
 
